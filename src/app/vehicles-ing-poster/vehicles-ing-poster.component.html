@@ -1,0 +1,24 @@
+me lleva la mandarina
+
+<form (ngSubmit)="enviardatos()">
+    <label for="Vehiculo">Vehiculo:</label>
+    <input type="text" id="Vehiculo" [(ngModel)]="formData.Vehiculo" name="Vehiculo" required placeholder="Ej: Ford Mustang GT">
+    <br>
+    <label for="Color">Color del Vehiculo:</label>
+    <input type="text" id="Color" [(ngModel)]="formData.Color" name="Color" required placeholder="Ej: Rojo">
+    <br>
+    <label for="Modelo">Modelo:</label>
+    <input type="number" id="Modelo" [(ngModel)]="formData.Modelo" name="Modelo" required placeholder="Ej: 2010">
+    <br>
+    <label for="referencia">Referencia:</label>
+    <input type="text" id="referencia" [(ngModel)]="formData.referencia" name="referencia" required placeholder="Ej:123456MJ">
+    <br>
+    <label for="Descripcion">Descripcion de Entrada:</label>
+    <input type="text" id="Descripcion" [(ngModel)]="formData.Descripcion" name="Descripcion" required placeholder="Ej: rayon en las puertas, espejo roto... etc">
+    <br>
+    <label for="imagen">ingrese el link de la imagen.:</label>
+    <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
+    <br>
+    <button type="submit">Click to try</button>
+    <button type="reset">Vaciar Campos</button>
+</form>

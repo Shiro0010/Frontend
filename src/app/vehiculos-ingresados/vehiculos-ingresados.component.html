@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idol</title>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Vehiculo</th>
+                <th>Color</th>
+                <th>Modelo</th>
+                <th>Referencia</th>
+                <th>Descripcion</th>
+                <th>imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let coche of registro">
+                <td>{{coche._id}}</td>
+                <td>{{coche.Vehiculo}}</td>
+                <td>{{coche.Color}}</td>
+                <td>{{coche.Modelo}}</td>
+                <td>{{coche.referencia}}</td>
+                <td>{{coche.Descripcion}}</td>
+                <td><img src="{{coche.imagen}}" alt="car" width="200px" height="150px"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
