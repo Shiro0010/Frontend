@@ -14,13 +14,15 @@ export class VehiclesIngPosterComponent implements OnInit {
     "Modelo": 0,
     "referencia": "",
     "Descripcion": "",
-    "EstadoId": "",
-    "PropietarioId": ""
+    "Estado": "",
+    "observacion":"",
+    "imagen":"",
+    "propietario": ""
   };
   estados = [
-    { id: 'ingresado', nombre: 'Ingresado' },
-    { id: 'en-reparacion', nombre: 'En Reparación' },
-    { id: 'reparado', nombre: 'Reparado' }
+    { id: 'Ingresado', nombre: 'Ingresado' },
+    { id: 'En reparación', nombre: 'En Reparación' },
+    { id: 'Reparado', nombre: 'Reparado' }
   ];
   propietarios: any[] = [];
 
@@ -37,7 +39,7 @@ export class VehiclesIngPosterComponent implements OnInit {
     this.propietarioService.obtenerPropietarios()
       .subscribe(
         propietarios => {
-          console.log('Propietarios recibidos:', propietarios); // Log para verificar los datos
+          console.log('Propietarios recibidos:', propietarios);
           this.propietarios = propietarios;
         },
         error => {
@@ -47,15 +49,16 @@ export class VehiclesIngPosterComponent implements OnInit {
   }
   
   enviardatos() {
+    console.log('Datos a enviar:', this.formData);
     this.poster.postearData(this.formData)
       .subscribe(
         (response) => {
           console.log("Datos Enviados exitosamente:", response);
-          alert("Datos guardados con exito pa");
+          alert("Datos guardados con éxito");
         },
         (error) => {
           console.error("Error al enviar los datos:", error);
-          alert("Hubo un error al enviar los datos joven");
+          alert("Hubo un error al enviar los datos");
         }
       );
   }
