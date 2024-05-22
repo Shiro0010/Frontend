@@ -1,5 +1,3 @@
-me lleva la mandarina
-
 <form (ngSubmit)="enviardatos()">
     <label for="Vehiculo">Vehiculo:</label>
     <input type="text" id="Vehiculo" [(ngModel)]="formData.Vehiculo" name="Vehiculo" required placeholder="Ej: Ford Mustang GT">
@@ -16,17 +14,23 @@ me lleva la mandarina
     <label for="Descripcion">Descripcion de Entrada:</label>
     <input type="text" id="Descripcion" [(ngModel)]="formData.Descripcion" name="Descripcion" required placeholder="Ej: rayon en las puertas, espejo roto... etc">
     <br>
-    <label for="Estado">:Estado</label>
-    <input type="text" id="Estado" [(ngModel)]="formData.Estado" name="Estado" required placeholder="Estado">
+    <label for="estado">Estado:</label>
+    <select [(ngModel)]="formData.EstadoId" name="estado" id="estado">
+    <option value="" disabled selected> Seleccione un estado </option>
+    <option *ngFor="let estado of estados" [value]="estado.id">{{ estado.nombre }}</option>
+    </select>
     <br>
     <label for="Observacion">Observacion:</label>
     <input type="text" id="Observacion" [(ngModel)]="formData.Observacion" name="Observacion" required placeholder="Observaciones">
     <br>
-    <label for="imagen">ingrese el link de la imagen.:</label>
+    <label for="imagen">ingrese el link de la imagen:</label>
     <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
     <br>
-    <label for="Propietario">:</label>
-    <input type="text" id="Propietario" [(ngModel)]="formData.Propietario" name="Propietario" required placeholder="Propietario">
+    <label for="propietario">Propietario:</label>
+    <select [(ngModel)]="formData.PropietarioId" name="propietario" id="propietario">
+    <option value="" disabled selected> Seleccione un propietario </option>
+    <option *ngFor="let propietario of propietarios" [value]="propietario._id">{{ propietario.Nombre }}</option>
+    </select>
     <br>
     <button type="submit">Guardar Datos del vehiculo</button>
     <button type="reset">Vaciar Campos</button>
