@@ -6,7 +6,8 @@
     <title>Idol</title>
 </head>
 <body>
-    <table border="1px">
+<div>
+    <table class="table table-dark table-striped">
         <thead>
             <tr>
                 <th>ID</th>
@@ -19,16 +20,17 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let coche of registro">
-                <td>{{coche._id}}</td>
-                <td>{{coche.Vehiculo}}</td>
-                <td>{{coche.Color}}</td>
-                <td>{{coche.Modelo}}</td>
-                <td>{{coche.referencia}}</td>
-                <td>{{coche.Descripcion}}</td>
-                <td><img src="{{coche.imagen}}" alt="car" width="200px" height="150px"></td>
+            <tr *ngFor="let coche of registro" class="datos">
+                <td class="dato">{{coche._id}}</td>
+                <td class="dato">{{coche.Vehiculo}}</td>
+                <td class="dato">{{coche.Color}}</td>
+                <td class="dato">{{coche.Modelo}}</td>
+                <td class="dato">{{coche.referencia}}</td>
+                <td class="dato">{{coche.Descripcion}}</td>
+                <td><img src="{{coche.imagen}}" alt="car" width="70px" height="70px"></td>
             </tr>
         </tbody>
     </table>
+</div>
 </body>
 </html>
