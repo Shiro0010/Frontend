@@ -12,4 +12,8 @@ export class MenuPageComponent {
   navigateToNuevoPropietario() {
     this.router.navigate(['/nuevo-propietario']);
   }
+  
+  navigateToVehiculosIngresados() {
+    this.router.navigate(['/vehiculos-ingresados']);
+  }
 }

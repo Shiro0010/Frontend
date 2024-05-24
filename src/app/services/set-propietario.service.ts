@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SetPropietarioService {
-  private apiUrl = 'http://localhost:3000/propietarios'; // Cambia la URL según sea necesario
+  private apiUrl = 'http://localhost:3000/nuevoPropietario'; // Cambia la URL según sea necesario
 
   constructor(private http: HttpClient) { }
 

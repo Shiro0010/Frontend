@@ -9,9 +9,10 @@ import { SetPropietarioService } from '../services/set-propietario.service';
 })
 export class NuevoPropietarioComponent {
   propietario: any = {
-    nombre: '',
-    direccion: '',
-    telefono: ''
+    Nombre: '',
+    Direccion: '',
+    Telefono: '',
+    Email:''
   };
 
   constructor(private propietariosService: SetPropietarioService, private router: Router) {}

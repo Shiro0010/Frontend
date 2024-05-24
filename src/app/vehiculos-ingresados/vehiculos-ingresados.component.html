@@ -6,6 +6,8 @@
     <title>Idol</title>
 </head>
 <body>
+    <h1>Vehiculos Existentes:</h1>
+    <br>
     <table border="1px">
         <thead>
             <tr>
@@ -15,7 +17,10 @@
                 <th>Modelo</th>
                 <th>Referencia</th>
                 <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Observacion</th>
                 <th>imagen</th>
+                <th>Propietario</th>
             </tr>
         </thead>
         <tbody>
@@ -26,9 +31,15 @@
                 <td>{{coche.Modelo}}</td>
                 <td>{{coche.referencia}}</td>
                 <td>{{coche.Descripcion}}</td>
+                <td>{{coche.Estado}}</td>
+                <td> {{coche.observacion}} </td>
                 <td><img src="{{coche.imagen}}" alt="car" width="200px" height="150px"></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
+    <a href="#">    
+        <button>Volver al inicio</button>
+    </a>
 </body>
 </html>

@@ -21,12 +21,11 @@
     </select>
     <br>
     <label for="Observacion">observacion:</label>
-    <input type="text" id="Observacion" [(ngModel)]="formData.Observacion" name="Observacion" required placeholder="Observaciones">
+    <input type="text" id="Observacion" [(ngModel)]="formData.observacion" name="Observacion" required placeholder="Observaciones">
     <br>
     <label for="imagen">imagen:</label>
     <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
     <br>
-    <label for="propietario">Propietario:</label>
     <label for="propietario">Propietario:</label>
     <select id="propietario" [(ngModel)]="formData.propietario" name="propietario" required>
         <option value="" disabled selected> Seleccione un propietario </option>
@@ -34,6 +33,5 @@
     </select>
     <br>
     <button type="submit">Guardar Datos del vehiculo</button>
-    <button type="reset">Vaciar Campos</button>
 </form>
 <button (click)="finalizar()">Finalizar</button>
