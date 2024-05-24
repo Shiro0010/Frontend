@@ -15,9 +15,18 @@
     <label for="Descripcion">Descripcion de Entrada:</label>
     <input type="text" id="Descripcion" [(ngModel)]="formData.Descripcion" name="Descripcion" required placeholder="Ej: rayon en las puertas, espejo roto... etc">
     <br>
+    <label for="Estado">:Estado</label>
+    <input type="text" id="Estado" [(ngModel)]="formData.Estado" name="Estado" required placeholder="Estado">
+    <br>
+    <label for="Observacion">Observacion:</label>
+    <input type="text" id="Observacion" [(ngModel)]="formData.Observacion" name="Observacion" required placeholder="Observaciones">
+    <br>
     <label for="imagen">ingrese el link de la imagen.:</label>
     <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
     <br>
-    <button type="submit">Click to try</button>
+    <label for="Propietario">:</label>
+    <input type="text" id="Propietario" [(ngModel)]="formData.Propietario" name="Propietario" required placeholder="Propietario">
+    <br>
+    <button type="submit">Guardar Datos del vehiculo</button>
     <button type="reset">Vaciar Campos</button>
 </form>
