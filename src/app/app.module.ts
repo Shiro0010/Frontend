@@ -7,6 +7,9 @@ import { FormsModule } from "@angular/forms";
 import { VehiculosIngresadosComponent } from './vehiculos-ingresados/vehiculos-ingresados.component';
 import { VehiclesIngPosterComponent } from './vehicles-ing-poster/vehicles-ing-poster.component';
 import { VehiculosIngDeleteComponent } from './vehiculos-ing-delete/vehiculos-ing-delete.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { NuevoPropietarioComponent } from './nuevo-propietario/nuevo-propietario.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { VehiculosIngDeleteComponent } from './vehiculos-ing-delete/vehiculos-in
     AppComponent,
     VehiculosIngresadosComponent,
     VehiclesIngPosterComponent,
-    VehiculosIngDeleteComponent
+    VehiculosIngDeleteComponent,
+    LandingPageComponent,
+    MenuPageComponent,
+    NuevoPropietarioComponent,
   ],
   imports: [
     BrowserModule,

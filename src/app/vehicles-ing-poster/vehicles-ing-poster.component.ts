@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostServiceIngService } from '../services/post-service-ing.service';
 import { PropietarioService } from '../services/propietarios.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vehicles-ing-poster',
@@ -28,7 +29,8 @@ export class VehiclesIngPosterComponent implements OnInit {
 
   constructor(
     private poster: PostServiceIngService,
-    private propietarioService: PropietarioService
+    private propietarioService: PropietarioService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -62,4 +64,8 @@ export class VehiclesIngPosterComponent implements OnInit {
         }
       );
   }
+  finalizar() {
+    this.router.navigate(['/vehiculos-ingresados']);
+  }
 }
+
