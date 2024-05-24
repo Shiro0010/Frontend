@@ -1,5 +1,5 @@
-# Dockerfile para el cliente (Angular)
-FROM node:18-alpine
+# Etapa de construcción
+FROM node:18-alpine as build
 
 WORKDIR /app
 
@@ -8,6 +8,13 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4200
+RUN npm run build --prod
 
-CMD ["npm", "start"]  # Asegúrate de tener "start": "ng serve" en package.json
+# Etapa de producción
+FROM nginx:alpine
+
+COPY --from=build /app/dist/clear-mechanic-front /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
