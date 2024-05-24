@@ -1,0 +1,14 @@
+<p>nuevo-propietario works!</p>
+<h1>Agregar Nuevo Propietario</h1>
+<form (ngSubmit)="onSubmit()" #propietarioForm="ngForm">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" [(ngModel)]="propietario.nombre" required>
+  
+  <label for="direccion">Dirección:</label>
+  <input type="text" id="direccion" name="direccion" [(ngModel)]="propietario.direccion" required>
+  
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" name="telefono" [(ngModel)]="propietario.telefono" required>
+  
+  <button type="submit">Guardar Propietario</button>
+</form>
