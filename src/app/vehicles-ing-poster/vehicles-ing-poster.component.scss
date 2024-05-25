@@ -1,6 +1,43 @@
 form, label{
+    font-size: 18px;
     padding: 1%;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    text-align: left;
 }
 input{
     margin: 0.5%;
+    padding-right: 5cm;
+    padding-inline-start: 10cm;
+    padding-inline-end: 5cm;
+    border-radius: 1cm;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.vehiculo{
+    background-color: white;
+    border-radius: 1cm;
+    margin-left: 5cm;
+    margin-right: 4cm;
+    margin-top: 0.5cm;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+.Gvehiculo{
+    margin-top: 2%;
+    border-radius: 1cm;
+    border: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(201, 201, 201);
+}
+option{
+    width: 5cm;
+}
+.finish{
+    border-radius: 1cm;
+    border: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(201, 201, 201);
 }

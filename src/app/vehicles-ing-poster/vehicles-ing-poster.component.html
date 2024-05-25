@@ -1,3 +1,4 @@
+<body class="vehiculo">
 <form (ngSubmit)="enviardatos()">
     <label for="Vehiculo">Vehiculo:</label>
     <input type="text" id="Vehiculo" [(ngModel)]="formData.Vehiculo" name="Vehiculo" required placeholder="Ej: Ford Mustang GT">
@@ -32,6 +33,7 @@
         <option *ngFor="let propietario of propietarios" [value]="propietario._id">{{ propietario.Nombre }}</option>
     </select>
     <br>
-    <button type="submit">Guardar Datos del vehiculo</button>
+    <button type="submit" class="Gvehiculo">Guardar Datos del vehiculo</button>
 </form>
-<button (click)="finalizar()">Finalizar</button>
+</body>
+<button (click)="finalizar()" class="finish">Finalizar</button>

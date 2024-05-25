@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idol</title>
 </head>
+<h1>Vehiculos Existentes:</h1>
 <body>
-    <h1>Vehiculos Existentes:</h1>
-    <br>
+    <br class="tab">
     <table border="1px">
         <thead>
             <tr>
@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let coche of registro">
+            <tr *ngFor="let coche of registro" class="tab">
                 <td>{{coche._id}}</td>
                 <td>{{coche.Vehiculo}}</td>
                 <td>{{coche.Color}}</td>
@@ -33,13 +33,13 @@
                 <td>{{coche.Descripcion}}</td>
                 <td>{{coche.Estado}}</td>
                 <td> {{coche.observacion}} </td>
-                <td><img src="{{coche.imagen}}" alt="car" width="200px" height="150px"></td>
+                <td><img src="{{coche.imagen}}" alt="car" width="80px" heigth="30"></td>
                 <td></td>
             </tr>
         </tbody>
     </table>
-    <a href="#">    
-        <button>Volver al inicio</button>
-    </a>
 </body>
 </html>
+<a href="#" class="home">    
+    <button class="home">Volver al inicio</button>
+</a>

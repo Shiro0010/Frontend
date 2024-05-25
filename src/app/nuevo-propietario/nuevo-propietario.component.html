@@ -1,4 +1,5 @@
-<h1>Agregar Nuevo Propietario</h1>
+<body class="forms">
+<h1 class="agregar">Agregar Nuevo Propietario</h1>
 <form (ngSubmit)="onSubmit()" #propietarioForm="ngForm">
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="nombre" [(ngModel)]="propietario.Nombre" required>
@@ -11,5 +12,6 @@
   <br>
   <label for="email">Email:</label>
   <input type="text" id="email" name="email" [(ngModel)]="propietario.Email" required>
-  <button type="submit">Guardar Propietario</button>
+  <button type="submit" class="guardar">Guardar Propietario</button>
 </form>
+</body>

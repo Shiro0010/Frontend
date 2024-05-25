@@ -1,5 +1,47 @@
-table{
-    margin: 1%;
-    text-align: center;
+body{
+    padding-top: 0%;
+    background-color: white;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+.tab{
+    border-collapse: collapse;
+    width: 2px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 
+  }
+  
+tr:hover {background-color: rgb(54, 245, 165);}
+
+.date{
+    background-color: white;
+    margin-right: 5cm;
+    margin-left: 5cm;
+    margin-top: 5cm;
+}
+.celda-imagen {
+    width: 5cm; /* Ancho deseado de la celda */
+    height:5cm; /* Altura deseada de la celda */
+    padding: 0; /* Elimina el padding para evitar que afecte al tamaño de la celda */
+}
+
+.imagen-ajustada {
+    width: 10%;
+    height: 10%;
+    object-fit: cover; /* Ajusta la imagen para cubrir la celda manteniendo la proporción */
+}
+h1{
+    color: white;
+}
+.home{
+    border-radius: 1cm;
+    border: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(201, 201, 201);
 }
