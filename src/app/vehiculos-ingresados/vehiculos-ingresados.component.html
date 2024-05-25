@@ -8,7 +8,7 @@
 <body class="tab">
     <h1>Vehiculos Existentes:</h1>
     <br>
-    <table border="1px">
+    <table border="1px" class="campos">
         <thead>
             <tr>
                 <th>ID</th>
@@ -24,23 +24,23 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let coche of registro" (click)="editarVehiculo(coche._id)">
+            <tr *ngFor="let coche of registro" >
                 <td>{{ coche._id }}</td>
                 <td>{{ coche.Vehiculo }}</td>
                 <td>{{ coche.Color }}</td>
                 <td>{{ coche.Modelo }}</td>
                 <td>{{ coche.referencia }}</td>
                 <td>{{ coche.Descripcion }}</td>
-                <td>{{ coche.Estado }}</td>
+                <td (click)="editarVehiculo(coche._id)">{{ coche.Estado }}</td>
                 <td>{{ coche.observacion }}</td>
-                <td><img [src]="coche.imagen" alt="car" width="200px" height="150px"></td>
+                <td><img [src]="coche.imagen" alt="car" width="100px" height="50px"></td>
                 <td>{{ coche.propietario }}</td> <!-- Ya se debería haber convertido en el nombre del propietario -->
             </tr>
         </tbody>
     </table>
     <a href="#">
-        <button>Volver al inicio</button>
+        <button class="Volver">Volver al inicio</button>
     </a>
-    <button (click)="irAEliminarVehiculo()">Eliminar Vehículo</button>
+    <button (click)="irAEliminarVehiculo()" class="elim">Eliminar Vehículo</button>
 </body>
 </html>

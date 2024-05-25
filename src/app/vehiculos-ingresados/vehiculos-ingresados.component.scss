@@ -1,8 +1,12 @@
 body{
     padding-top: 0%;
-    background-color: white;
     margin-left: 1cm;
     margin-right: 1cm;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
 }
 .tab{
     border-collapse: collapse;
@@ -16,7 +20,7 @@ body{
 
   }
   
-tr:hover {background-color: rgb(54, 245, 165);}
+tr:hover {background-color: rgb(190, 190, 190);}
 
 .date{
     background-color: white;
@@ -44,4 +48,30 @@ h1{
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: rgb(201, 201, 201);
+}
+.campos{
+    background-color: white;
+    border-radius: 1%;
+}
+.Volver{
+    margin-right: 25cm;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    width: 150px;
+    height: 30px;
+    border-radius: 2cm;
+    background-color: #229954;
+    border: #229954;
+    color: white;
+}
+.elim{
+    margin-left: 25cm;
+    
+    padding-bottom: 5%;
+    width: 150px;
+    height: 30px;
+    border-radius: 2cm;
+    background-color: #229954;
+    border: #229954;
+    color: white;
 }

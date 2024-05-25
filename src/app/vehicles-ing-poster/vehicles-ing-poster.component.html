@@ -28,7 +28,7 @@
     <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
     <br>
     <label for="propietario">Propietario:</label>
-    <select id="propietario" [(ngModel)]="formData.propietario" name="propietario" required>
+    <select id="propietario" [(ngModel)]="formData.propietario" name="propietario" required class="state">
         <option value="" disabled selected> Seleccione un propietario </option>
         <option *ngFor="let propietario of propietarios" [value]="propietario._id">{{ propietario.Nombre }}</option>
     </select>
