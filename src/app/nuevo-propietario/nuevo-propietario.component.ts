@@ -27,4 +27,7 @@ export class NuevoPropietarioComponent {
       alert("Error al guardar el propietario")
     });
   }
+  omitirRegistro() {
+    this.router.navigate(['/ingresar-vehiculo']);
+  }
 }
