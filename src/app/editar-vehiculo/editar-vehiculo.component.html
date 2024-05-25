@@ -1,0 +1,38 @@
+<form (ngSubmit)="actualizarVehiculo()">
+    <br>
+    <label for="Vehiculo">Vehiculo:</label>
+    <input type="text" id="Vehiculo" [(ngModel)]="formData.Vehiculo" name="Vehiculo" required placeholder="Ej: Ford Mustang GT">
+    <br>
+    <label for="Color">Color del Vehiculo:</label>
+    <input type="text" id="Color" [(ngModel)]="formData.Color" name="Color" required placeholder="Ej: Rojo">
+    <br>
+    <label for="Modelo">Modelo:</label>
+    <input type="number" id="Modelo" [(ngModel)]="formData.Modelo" name="Modelo" required placeholder="Ej: 2010">
+    <br>
+    <label for="referencia">Referencia:</label>
+    <input type="text" id="referencia" [(ngModel)]="formData.referencia" name="referencia" required placeholder="Ej:123456MJ">
+    <br>
+    <label for="Descripcion">Descripcion de Entrada:</label>
+    <input type="text" id="Descripcion" [(ngModel)]="formData.Descripcion" name="Descripcion" required placeholder="Ej: rayon en las puertas, espejo roto... etc">
+    <br>
+    <label for="estado">Estado:</label>
+    <select [(ngModel)]="formData.Estado" name="estado" id="estado">
+    <option value="" disabled selected> Seleccione un estado </option>
+    <option *ngFor="let estado of estados" [value]="estado.id">{{ estado.nombre }}</option>
+    </select>
+    <br>
+    <label for="Observacion">observacion:</label>
+    <input type="text" id="Observacion" [(ngModel)]="formData.observacion" name="Observacion" required placeholder="Observaciones">
+    <br>
+    <label for="imagen">imagen:</label>
+    <input type="text" id="imagen" [(ngModel)]="formData.imagen" name="imagen" placeholder="Link de la imagen.">
+    <br>
+    <label for="propietario">Propietario:</label>
+    <select id="propietario" [(ngModel)]="formData.propietario" name="propietario" required>
+        <option value="" disabled selected> Seleccione un propietario </option>
+        <option *ngFor="let propietario of propietarios" [value]="propietario._id">{{ propietario.Nombre }}</option>
+    </select>
+    <br>
+    <button type="submit" class="Gvehiculo">Guardar Datos del vehiculo</button>
+</form>
+<button (click)="finalizar()">Finalizar</button>

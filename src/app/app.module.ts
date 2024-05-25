@@ -10,6 +10,7 @@ import { VehiculosIngDeleteComponent } from './vehiculos-ing-delete/vehiculos-in
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { NuevoPropietarioComponent } from './nuevo-propietario/nuevo-propietario.component';
+import { EditarVehiculoComponent } from './editar-vehiculo/editar-vehiculo.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NuevoPropietarioComponent } from './nuevo-propietario/nuevo-propietario
     LandingPageComponent,
     MenuPageComponent,
     NuevoPropietarioComponent,
+    EditarVehiculoComponent,
   ],
   imports: [
     BrowserModule,

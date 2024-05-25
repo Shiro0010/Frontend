@@ -75,4 +75,9 @@ export class VehiculosIngresadosComponent implements OnInit {
     this.router.navigate(['/DeleteIng']);
   }
 
+
+  editarVehiculo(id: string) {
+    this.router.navigate(['/editar-vehiculo', id]);
+  }
+
 }

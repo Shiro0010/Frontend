@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let coche of registro">
+            <tr *ngFor="let coche of registro" (click)="editarVehiculo(coche._id)">
                 <td>{{ coche._id }}</td>
                 <td>{{ coche.Vehiculo }}</td>
                 <td>{{ coche.Color }}</td>
@@ -33,7 +33,7 @@
                 <td>{{ coche.Descripcion }}</td>
                 <td>{{ coche.Estado }}</td>
                 <td>{{ coche.observacion }}</td>
-                <td><img src="{{ coche.imagen }}" alt="car" width="200px" height="150px"></td>
+                <td><img [src]="coche.imagen" alt="car" width="200px" height="150px"></td>
                 <td>{{ coche.propietario }}</td> <!-- Ya se debería haber convertido en el nombre del propietario -->
             </tr>
         </tbody>

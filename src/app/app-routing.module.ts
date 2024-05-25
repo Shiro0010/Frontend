@@ -6,6 +6,7 @@ import { VehiculosIngDeleteComponent } from './vehiculos-ing-delete/vehiculos-in
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { NuevoPropietarioComponent } from './nuevo-propietario/nuevo-propietario.component';
+import { EditarVehiculoComponent } from './editar-vehiculo/editar-vehiculo.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'nuevo-propietario', component: NuevoPropietarioComponent }, // Formulario para nuevos propietarios
   { path: 'ingresar-vehiculo', component: VehiclesIngPosterComponent }, // Componente para ingresar vehículos
   { path: 'vehiculos-ingresados', component: VehiculosIngresadosComponent },
-  {path: 'DeleteIng', component: VehiculosIngDeleteComponent},
+  {path: 'DeleteIng', component: VehiculosIngDeleteComponent}, //Borrar Vainas
+  { path: 'editar-vehiculo/:id', component: EditarVehiculoComponent }, //Editar vainas
   { path: '', component: LandingPageComponent }, // Página de inicio
   { path: 'menu', component: MenuPageComponent }, // Página con los botones
   { path: 'nuevo-propietario', component: NuevoPropietarioComponent }, // Formulario para nuevos propietarios
